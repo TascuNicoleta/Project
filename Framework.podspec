@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     :branch => "dev",
     :tag => "#{s.version}"
   }
-  s.source_files        = "Framework/*"
+  s.source_files        = "Framework"
   
   s.subspec 'CoreDependency' do |dependency|
     dependency.source_files = 'Framework/CoreDependency/*.swift'
