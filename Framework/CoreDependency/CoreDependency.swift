@@ -1,6 +1,6 @@
 import Foundation
 
-open class CoreDependency: Dependency {
+public class CoreDependency: Dependency {
 
     public init() { }
     

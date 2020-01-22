@@ -1,7 +1,7 @@
 import UIKit
 
 /// Attach to any type for exposing the dependency container
-protocol HasDependencies {
+ public protocol HasDependencies {
     var dependencies: Dependency { get }
 }
 
@@ -15,14 +15,14 @@ extension HasDependencies {
 
 /// Used to pass around dependency container
 /// which can be reassigned to another container
-struct DependencyInjector {
+public struct DependencyInjector {
     static var dependencies: Dependency = CoreDependency()
     private init() { }
 }
 
-extension UIApplicationDelegate {
-    
-    func configure(dependency: Dependency) {
-        DependencyInjector.dependencies = dependency
-    }
-}
+//extension UIApplicationDelegate {
+//    
+//    func configure(dependency: Dependency) {
+//        DependencyInjector.dependencies = dependency
+//    }
+//}
