@@ -19,10 +19,3 @@ struct DependencyInjector {
     static var dependencies: Dependency = CoreDependency()
     private init() { }
 }
-
-//extension UIApplicationDelegate {
-//    
-//    func configure(dependency: Dependency) {
-//        DependencyInjector.dependencies = dependency
-//    }
-//}
