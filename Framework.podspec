@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.source        = {
     :git => "https://github.com/TascuNicoleta/Project.git",
     :branch => "dev",
-    :tag => "#{s.version}"
+    :tag => "#{s.version},
+    :submodules => true"
   }
   s.source_files        = "Framework"
   
