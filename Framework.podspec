@@ -11,5 +11,10 @@ Pod::Spec.new do |s|
     :git => "https://github.com/TascuNicoleta/Project.git",
     :tag => "#{s.version}"
   }
-  s.source_files        = "Framework"
+  s.source_files        = "Framework/**/*"
+  
+  s.subspec 'CoreDependency' do |dependency|
+    dependency.source_files = 'Framework/CoreDependency/*.swift'
+  end
+
 end
