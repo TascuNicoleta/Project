@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   }
   s.source_files        = "Framework/*"
   
-  I #s.subspec 'CoreDependency' do |dependency|
+  #s.subspec 'CoreDependency' do |dependency|
     #dependency.source_files = 'Framework/CoreDependency/*.swift'
   #end
 
