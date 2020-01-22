@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		644BC12423D8464500EB3C6D /* Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 644BC12223D8464500EB3C6D /* Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		644BC12C23D84B6800EB3C6D /* HasDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644BC12B23D84B6800EB3C6D /* HasDependencies.swift */; };
+		644BC12E23D84B7800EB3C6D /* CoreDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644BC12D23D84B7700EB3C6D /* CoreDependency.swift */; };
+		644BC13023D84B8300EB3C6D /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644BC12F23D84B8300EB3C6D /* Dependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		644BC11F23D8464500EB3C6D /* Framework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Framework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		644BC12223D8464500EB3C6D /* Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Framework.h; sourceTree = "<group>"; };
 		644BC12323D8464500EB3C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		644BC12B23D84B6800EB3C6D /* HasDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasDependencies.swift; sourceTree = "<group>"; };
+		644BC12D23D84B7700EB3C6D /* CoreDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDependency.swift; sourceTree = "<group>"; };
+		644BC12F23D84B8300EB3C6D /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +52,21 @@
 		644BC12123D8464500EB3C6D /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				644BC12A23D84B3F00EB3C6D /* CoreDependency */,
 				644BC12223D8464500EB3C6D /* Framework.h */,
 				644BC12323D8464500EB3C6D /* Info.plist */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		644BC12A23D84B3F00EB3C6D /* CoreDependency */ = {
+			isa = PBXGroup;
+			children = (
+				644BC12F23D84B8300EB3C6D /* Dependency.swift */,
+				644BC12D23D84B7700EB3C6D /* CoreDependency.swift */,
+				644BC12B23D84B6800EB3C6D /* HasDependencies.swift */,
+			);
+			path = CoreDependency;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +112,7 @@
 				TargetAttributes = {
 					644BC11E23D8464500EB3C6D = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -131,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644BC13023D84B8300EB3C6D /* Dependency.swift in Sources */,
+				644BC12C23D84B6800EB3C6D /* HasDependencies.swift in Sources */,
+				644BC12E23D84B7800EB3C6D /* CoreDependency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +281,7 @@
 		644BC12823D8464500EB3C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NGY2J4D3S;
@@ -276,6 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nicoleta.Framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +307,7 @@
 		644BC12923D8464500EB3C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5NGY2J4D3S;
