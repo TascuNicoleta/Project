@@ -8,14 +8,14 @@ import UIKit
 extension HasDependencies {
     
     /// Container for dependency instance factories
-    var dependencies: Dependency {
+    public var dependencies: Dependency {
         return DependencyInjector.dependencies
     }
 }
 
 /// Used to pass around dependency container
 /// which can be reassigned to another container
-public struct DependencyInjector {
+struct DependencyInjector {
     static var dependencies: Dependency = CoreDependency()
     private init() { }
 }
