@@ -16,9 +16,7 @@ Pod::Spec.new do |s|
   s.source_files        = "Framework"
   
   s.subspec 'CoreDependency' do |dependency|
-    dependency.module_name = 'CoreDependency'
     dependency.source_files = 'Framework/CoreDependency/*.swift'
-    
   end
 
 end
